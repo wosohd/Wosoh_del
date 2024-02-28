@@ -6,7 +6,7 @@ import MapView, { Marker} from 'react-native-maps';
 import { themeColors } from '../theme';
 import * as Icon from "react-native-feather"
 import { useDispatch, useSelector } from 'react-redux';
-import { selectRestaurant } from '../slices/restaurantSlice';
+import { selectRestaurant } from '../slices/restaurantSlice.js';
 import { emptyCart } from '../slices/cartSlice';
 
 

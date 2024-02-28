@@ -6,7 +6,7 @@ import { themeColors } from '../theme';
 import DishRow from '../components/dishRow';
 import CartIcon from '../components/cartIcon';
 import { useDispatch } from 'react-redux';
-import { setRestaurant } from '../slices/restaurantSlice';
+import { setRestaurant } from '../slices/restaurantSlice.js';
 
 export default function RestaurantScreen() {
   const {params} = useRoute();
