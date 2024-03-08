@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
-import { featured } from '../constants';
 import { themeColors } from '../theme';
 import * as Icon from "react-native-feather";
 import { useNavigation } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectRestaurant } from '../slices/restaurantSlice.js';
 import { removeFromCart, selectCartItems, selectCartTotal } from '../slices/cartSlice';
+import { urlFor } from '../sanity';
 
 
 export default function CartScreen() {
@@ -75,7 +75,7 @@ export default function CartScreen() {
                 <Text className="font-bold" style={{color: themeColors.text}}>
                     {items.length} x
                 </Text>
-                <Image className="h-14 w-14 rounded-full" source={{uri: urlFor(dish.image).url{}}} />
+                <Image className="h-14 w-14 rounded-full" source={{uri: urlFor(dish.image).url()}} />
                 <Text className="flex-1 font-bold text-gray-700">{dish.name}</Text>
                 <Text className="font-semibold text-base">${dish.price}</Text>
                 <TouchableOpacity

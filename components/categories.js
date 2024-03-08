@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollView, Touchable, View, TouchableOpacity, Image, Text } from 'react-native';
-import { useState } from 'react';
-import { useEffect } from 'react';
 import { getCategories } from '../api';
+import { urlFor } from '../sanity';
 
 export default function Categories() {
     const [activeCategory, setActiveCategory] = useState(null);
-    let [categories, setCategories] = usetate([]);
+    let [categories, setCategories] = useState([]);
    
-   useEffect({}=>{
+   useEffect(()=>{
     getCategories().then(data=>{
         setCategories(data);
     })
    },[])
 
    return (
-   <View classname="mt-4">
+   <View className="mt-4">
     <ScrollView
     horizontal
     showsHorizontalScrollIndicator={false}

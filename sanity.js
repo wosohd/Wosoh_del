@@ -1,8 +1,8 @@
-import  SanityClient  from "@sanity/client";
+import  SanityClient  from '@sanity/client';
 import  ImageBuilder from "@sanity/image-url";
 
-const client = sanityClient ({
-    projectId: '',
+const client = SanityClient ({
+    projectId: 'sr9bpe5h',
     dataset: 'production',
     useCdn: 'true',
     apiVersion: '2021-10-21',

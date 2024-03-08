@@ -7,7 +7,7 @@ import { themeColors } from '../theme';
 import Categories from '../components/categories';
 import FeaturedRow from '../components/featuredRow';
 import { useEffect, useState } from 'react';
-import { getFeaturedRestaurantsById } from '../api';
+import { getFeaturedRestaurants } from '../api';
 
 export default function HomeScreen() {
 

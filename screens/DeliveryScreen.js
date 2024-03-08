@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { featured } from '../constants';
 import { useNavigation } from '@react-navigation/native';
 import MapView, { Marker} from 'react-native-maps';
 import { themeColors } from '../theme';
