@@ -62,7 +62,7 @@ export default function DeliveryScreen() {
                 <Image className="h-16 w-16 rounded-full"source={require('../assets/images/deliveryGuy.png')}/>
             </View>
             <View className="flex-1 ml-3">
-            <Text className="text-lg font-bold text-white">James Kanyi</Text>
+            <Text className="text-lg font-bold text-white">Ariri Wosoh</Text>
             <Text className="text-lg text-white">Your Rider</Text>
             </View>
             <View className="flex-row items-center space-x-3 mr-3">

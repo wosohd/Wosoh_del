@@ -36,5 +36,5 @@ export const getFeaturedRestaurantsById = Id=>{
                 }
             }
         }[0]
-    `, {id})
+    `, {Id})
 }
